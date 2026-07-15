@@ -18,6 +18,6 @@ jobs:
 
       - name: Trigger n8n workflow
         run: |
-          curl -fsS -X POST https://mkserver.your-tailnet.ts.net/webhook/your-webhook-id \
+           curl -fsS -X POST http://cyborg.tail6d0a3.ts.net:5678/webhook/f278a2f7-34d8-401b-8dda-9b81ac3cfd8b \
             -H "Content-Type: application/json" \
             -d "{\"repo\": \"${{ github.repository }}\", \"sha\": \"${{ github.sha }}\"}"
