@@ -3,7 +3,8 @@ name: Trigger n8n on push
 on:
   push:
     branches: [main]
-
+  workflow_dispatch:   # adds a "Run workflow" button in the Actions tab
+  
 jobs:
   trigger-n8n:
     runs-on: ubuntu-latest
