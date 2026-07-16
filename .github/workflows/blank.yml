@@ -18,6 +18,7 @@ jobs:
 
       - name: Trigger n8n workflow
         run: |
-           curl -fsS -X POST http://cyborg.tail6d0a3.ts.net:5678/webhook/f278a2f7-34d8-401b-8dda-9b81ac3cfd8b \
+           curl -fsS -X POST http://cyborg.tail6d0a3.ts.net:5678/webhook/GitHub-CodeDeploy \
             -H "Content-Type: application/json" \
+            -H "X-Webhook-Secret: ${{ secrets.N8N_WEBHOOK_SECRET }}" \
             -d "{\"repo\": \"${{ github.repository }}\", \"sha\": \"${{ github.sha }}\"}"
