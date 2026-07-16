@@ -1,0 +1,7 @@
+[[oidc_providers]]
+name = "Authentik"
+slug = "scanopy"
+logo = "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/authentik.svg"
+issuer_url = "https://auth.local.kaneworld.org/application/o/scanopy/"
+client_id = "P2jR5HxlcPz91WfzpxBbIQXINZJUOY0xxx5l0XiU"
+client_secret = "tOiOFIqIxledWQi6uVBj7OkMknM3k4sUTzxJ0rH0BXD6SAPbllZcMAYZAj75SHmKP2bqcfFspyS1gfcrKddr3LPdTPHkRSkLGU2rGhFc0FRQzF3jlOYlzfrACvDxUHzu"

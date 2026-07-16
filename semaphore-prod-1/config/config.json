@@ -1,0 +1,34 @@
+{
+  "auth": {
+    "method": "oidc",
+    "oidc_provider": "authentik"
+  },
+  "oidc_providers": {
+    "authentik": {
+      "display_name": "SSO with Authentik",
+      "provider_url": "https://auth.local.kaneworld.org/application/o/semaphore/",
+      "client_id": "iTFxyelofXa2UPoaTAWOQyv485cSlENfeCGQFkit",
+      "client_secret": "jKwe0a79UxG8V5OIkL9j0FHivjg4RbTWNnKCRuLjwtXzUFZMponskAYlU9j5yeGLq36LF7VTFtQ5iw3cP7fCHZNebW8zK3N2h8mVbFukjQF8M49CUShIAnfqE8JFg2be",
+      "redirect_url": "https://semaphore-prod-1.local.kaneworld.org/api/auth/oidc/authentik/redirect/",
+      "scopes": ["openid", "profile", "email"],
+      "username_claim": "preferred_username",
+      "name_claim": "preferred_username"
+    }
+  },
+  "mysql": {
+    "host": "mysql:3306",
+    "user": "semaphore",
+    "pass": "Skippy10!",
+    "name": "semaphore"
+  },
+  "dialect": "mysql",
+  "tmp_path": "/tmp/semaphore",
+  "cookie_hash": "HIgrwd1qk11LlrQp8FPUDDY0oswAcJYnCDe+yOsAWdA=",
+  "cookie_encryption": "2/tfDUfhzs9NvYI0C9FPbwKdblZb/nyhvMxdp+AIqq8=",
+  "access_key_encryption": "Hx5dSPekWkZQg8bKS3SczEx4R9XPbQHJxMHJaKOKGqA=",
+  "http_port": "3000",
+  "api": {
+    "enabled": true
+  }
+}
+
