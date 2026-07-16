@@ -1,0 +1,33 @@
+# To see all available options, please visit the docs:
+# https://docs.pangolin.net/
+
+gerbil:
+    start_port: 51820
+    base_endpoint: "pangolin.kaneworld.org"
+
+app:
+    dashboard_url: "https://pangolin.kaneworld.org"
+    log_level: "info"
+    telemetry:
+        anonymous_usage: true
+
+domains:
+    domain1:
+        base_domain: "kaneworld.org"
+
+server:
+    secret: "Oxy8JDXrhTYhQ79CYbjtSx/L3nIJaIEf4W33oP7QHaQ="
+    cors:
+        origins: ["https://pangolin.kaneworld.org"]
+        methods: ["GET", "POST", "PUT", "DELETE", "PATCH"]
+        allowed_headers: ["X-CSRF-Token", "Content-Type"]
+        credentials: false
+    maxmind_db_path: "./config/GeoLite2-Country.mmdb"
+    integration_port: 3003
+
+flags:
+    require_email_verification: false
+    disable_signup_without_invite: true
+    disable_user_create_org: false
+    allow_raw_resources: true
+    enable_integration_api: true
